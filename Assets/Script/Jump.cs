@@ -36,7 +36,7 @@ public class Jump : MonoBehaviour
             Debug.DrawRay(rigid.position, Vector3.up, new Color(0, 0, 1));
 
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Platform"));
-            RaycastHit2D rayHitSky = Physics2D.Raycast(rigid.position, Vector3.up, 1, LayerMask.GetMask("Platform"));
+            RaycastHit2D rayHitSky = Physics2D.Raycast(rigid.position, Vector3.up, 1, LayerMask.GetMask("PlatformSky"));
             RaycastHit2D rayHitCarrot = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Carrot"));
 
             //땅 충돌 이벤트
@@ -44,7 +44,7 @@ public class Jump : MonoBehaviour
             {
                 if (rayHit.distance <= 0.78f)
                 {
-                    Debug.Log(rayHit.collider.name);
+                    //Debug.Log(rayHit.collider.name);
                     checkJump = true;
                 }
             }
