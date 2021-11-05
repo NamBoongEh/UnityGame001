@@ -42,7 +42,7 @@ public class CurtainCall : MonoBehaviour
         sunFakeCurtain.gameObject.SetActive(true);
 
         moonCurtain.gameObject.SetActive(true);
-        sunCurtain.transform.position = new Vector3(0, 13f, 99);
+        sunCurtain.transform.localPosition = new Vector3(0, 13f, 99);
         sunCurtain.gameObject.SetActive(false);
 
     }
@@ -54,7 +54,7 @@ public class CurtainCall : MonoBehaviour
         moonFakeCurtain.gameObject.SetActive(true);
         sunFakeCurtain.gameObject.SetActive(false);
 
-        moonCurtain.transform.position = new Vector3(0, 13f, 99);
+        moonCurtain.transform.localPosition = new Vector3(0, 13f, 99);
         moonCurtain.gameObject.SetActive(false);
         sunCurtain.gameObject.SetActive(true);
     }

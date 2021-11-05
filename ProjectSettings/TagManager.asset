@@ -7,11 +7,12 @@ TagManager:
   - Map
   - Platform
   - Obstacle
+  - Coin
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Character
   - Water
   - UI
   - 
@@ -19,7 +20,7 @@ TagManager:
   - Platform
   - Carrot
   - Curtain
-  - 
+  - Coin
   - 
   - 
   - 

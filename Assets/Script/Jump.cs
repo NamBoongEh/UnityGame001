@@ -22,7 +22,7 @@ public class Jump : MonoBehaviour
             if (Input.anyKey && checkJump)
             {
                 Debug.Log("¶Ú´Ù.");
-                rigid.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
+                rigid.AddForce(Vector2.up * jump);
             }
     }
 
@@ -43,27 +43,20 @@ public class Jump : MonoBehaviour
             if (rayHit.collider != null)
             {
                 if (rayHit.distance <= 0.78f)
-                {
-                    //Debug.Log(rayHit.collider.name);
                     checkJump = true;
-                }
             }
 
             //ÇÏ´Ã Ãæµ¹ ÀÌº¥Æ®
             if (rayHitSky.collider != null)
             {
                 if (rayHitSky.distance <= 0.78f)
-                {
                     Debug.Log("ÇÏ´Ã¿¡ ´ê¾Ò´Ù! " + rayHitSky.collider.name);
-                }
             }
 
             if(rayHitCarrot.collider != null)
             {
                 if(rayHitCarrot.distance <= 0.78f)
-                {
                     Debug.Log("´ç±Ù¿¡ ¿Ã¶óÅÀ´Ù! " + rayHitCarrot.collider.name);
-                }
             }
         }
         else

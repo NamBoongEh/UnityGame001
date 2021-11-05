@@ -6,22 +6,32 @@ public class Coin : MonoBehaviour
 {
     //x가 -15부터 밖, 시작은 5부터
     public GameObject coin;
+    public SpriteRenderer coinSide1;
+    public SpriteRenderer coinSide2;
   
     Transform coinTransform;
     public float speed;
 
-    // Start is called before the first frame update
     void Start()
     {
         coinTransform = GetComponent<Transform>();
+        coin.gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.left * Time.deltaTime * speed);
         
         if(coin.transform.position.x <= -15f)
-            coin.transform.position = new Vector3(5f, 6.7f, -7.8f);
+            coin.transform.position = new Vector3(5f, -6.7f, -1f);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+            coinSide1.material.color = Color.clear;
+            coinSide2.material.color = Color.clear;
+        }
     }
 }
