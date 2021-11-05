@@ -2,6 +2,15 @@
 <br/>
 <br/>
 
+<h3> 2021-11-05 </h3>
+
+https://user-images.githubusercontent.com/67003390/140479302-309de1ea-2a53-4975-a972-9f717886ea2c.mp4
+
+이제 동전도 먹습니다^-^<br/>
+
+<br/>
+<br/>
+
 <h3> 2021-11-04 </h3>
 
 https://user-images.githubusercontent.com/67003390/140282075-c80ae7b4-899d-48a9-a408-500889748215.mp4
