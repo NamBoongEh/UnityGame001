@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Obstacle
   - Coin
+  - Carrot
   layers:
   - Default
   - TransparentFX
@@ -39,8 +40,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - End
+  - MapEnd
   m_SortingLayers:
   - name: Default
     uniqueID: 0

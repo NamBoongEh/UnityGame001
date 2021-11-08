@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -30,8 +31,15 @@ public class GameManagerScript : MonoBehaviour
             currentTime = 0;
             random = Random.Range(1f, 10f);
 
-            //20.5초 뒤에 못먹은 코인 자동 소멸
-            Destroy(copycoin, 25f);
+            //7.7초 뒤에 못먹은 코인 자동 소멸
+            Destroy(copycoin, 7.7f);
         }
+    }
+
+    //게임 재시작
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 }
