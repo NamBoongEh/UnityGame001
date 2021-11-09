@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    //x가 -15부터 밖, 시작은 5부터
     public GameObject coin;
     public SpriteRenderer coinSide1;
     public SpriteRenderer coinSide2;

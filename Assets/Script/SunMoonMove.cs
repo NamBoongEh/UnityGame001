@@ -6,7 +6,7 @@ public class SunMoonMove : MonoBehaviour
 {
     public Transform sunrise;
     public Transform sunset;
-    float journeyTime = 24000F;
+    float journeyTime = 19000F;
     float startTime;
     float reduceHeight = 10.0F; //Center값을 줄이기, 해당 값이 높을수록 포물선의 높이는 낮아진다.
 
@@ -37,7 +37,6 @@ public class SunMoonMove : MonoBehaviour
 
         if(transform.position.x <= -10.8f && transform.position.y <= -5.7)
         {
-            Debug.Log("해또는 달 도착!");
             if (sun.gameObject.activeSelf)
                 ChangeMoon();
             else if(moon.gameObject.activeSelf)
@@ -47,7 +46,6 @@ public class SunMoonMove : MonoBehaviour
 
     void ChangeSun()
     {
-        Debug.Log("해로 바뀌었다!");
         startTime = Time.time;
         sun.gameObject.SetActive(true);
         moon.transform.position = new Vector3(9.96f, -5.43f, 10);
@@ -56,7 +54,6 @@ public class SunMoonMove : MonoBehaviour
 
     void ChangeMoon()
     {
-        Debug.Log("달로 바뀌었다!");
         startTime = Time.time;
         moon.gameObject.SetActive(true);
         sun.transform.position = new Vector3(9.96f, -5.43f, 10);
