@@ -2,6 +2,16 @@
 <br/>
 <br/>
 
+<h3> 2021-11-09 </h3>
+
+https://user-images.githubusercontent.com/67003390/140886443-8cb472ea-63c5-4b89-95c8-be70c551284a.mp4
+
+완성! 실제 게임 화면!^-^
+
+
+<br/>
+<br/>
+
 <h3> 2021-11-08 </h3>
 
 https://user-images.githubusercontent.com/67003390/140720685-28881768-bb62-4bae-8ce6-18a352929522.mp4
